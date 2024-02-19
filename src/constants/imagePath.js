@@ -1,6 +1,5 @@
 export default {
-
-  /********************* BottomTabs  Icons **********************/ 
+  /********************* BottomTabs  Icons **********************/
   firstActiveIcon: require('../assets/images/ic_blue_setting.png'),
   firstInActiveIcon: require('../assets/images/ic_blue_setting.png'),
   secondActiveIcon: require('../assets/images/ic_blue_setting.png'),
@@ -11,5 +10,4 @@ export default {
   fourthInActiveIcon: require('../assets/images/ic_blue_setting.png'),
   fifthActiveIcon: require('../assets/images/ic_blue_setting.png'),
   fifthInActiveIcon: require('../assets/images/ic_blue_setting.png'),
-
 };

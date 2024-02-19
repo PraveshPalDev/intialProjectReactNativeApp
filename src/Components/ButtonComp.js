@@ -1,25 +1,23 @@
 import React from 'react';
-import { Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { moderateScale } from '../styles/responsiveSize';
+import {Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {moderateScale} from '../styles/responsiveSize';
 import colors from '../styles/colors';
 
-import commonStyles, { hitSlopProp } from '../styles/commonStyles';
+import commonStyles, {hitSlopProp} from '../styles/commonStyles';
 
 const ButtonComp = ({
-  onPress = () => { },
+  onPress = () => {},
   btnText = '',
   btnTextStyle = {},
   btnStyle = {},
 }) => {
   return (
     <TouchableOpacity
-      style={{ ...styles.btnStyle, ...btnStyle }}
+      style={{...styles.btnStyle, ...btnStyle}}
       hitSlop={hitSlopProp}
       activeOpacity={0.8}
-      onPress={onPress}
-    >
-      <Text style={{ ...styles.btnTextStyle, ...btnTextStyle }}
-      >{btnText}</Text>
+      onPress={onPress}>
+      <Text style={{...styles.btnTextStyle, ...btnTextStyle}}>{btnText}</Text>
     </TouchableOpacity>
   );
 };
@@ -34,7 +32,7 @@ const styles = StyleSheet.create({
   },
   btnTextStyle: {
     // ...commonStyles.fontSize26,
-    textTransform:'uppercase'
+    textTransform: 'uppercase',
   },
 });
 export default ButtonComp;

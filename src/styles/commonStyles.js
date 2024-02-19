@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 import {textScale} from './responsiveSize';
 import colors from './colors';
 import fontFamily from './fontFamily';
@@ -7,8 +7,8 @@ export const hitSlopProp = {
   top: 12,
   right: 12,
   left: 12,
-  bottom: 12
-}
+  bottom: 12,
+};
 export default StyleSheet.create({
   fontSize10: {
     fontSize: textScale(10),
@@ -108,7 +108,7 @@ export default StyleSheet.create({
     backgroundColor: colors.white,
     borderRadius: 4,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
+    shadowOffset: {width: 0, height: 1},
     shadowOpacity: 0.4,
     shadowRadius: 2,
     elevation: 2,
@@ -119,11 +119,11 @@ export default StyleSheet.create({
   fontSize40: {
     fontFamily: fontFamily.bold,
     fontSize: textScale(40),
-    color: colors.white
+    color: colors.white,
   },
   flexView: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-  }
+  },
 });

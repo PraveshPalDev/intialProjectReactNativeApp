@@ -1,19 +1,17 @@
-import { FORGOT_PASSWORD, LOGIN_API, SIGNUP_API } from '../../config/urls';
-import { apiPost, clearUserData, setUserData } from '../../utils/utils';
-import { saveUserData } from '../reducers/auth';
+import {FORGOT_PASSWORD, LOGIN_API, SIGNUP_API} from '../../config/urls';
+import {apiPost, clearUserData, setUserData} from '../../utils/utils';
+import {saveUserData} from '../reducers/auth';
 import store from '../store';
 import types from '../types';
-const { dispatch } = store;
-
+const {dispatch} = store;
 
 export function signUp(data) {
   return apiPost(SIGNUP_API, data);
 }
 
-
-export const login = (data) => {
+export const login = data => {
   dispatch(saveUserData(data)); //saveUserData is a function which is define in reducer state
-  
+
   // ************* uncomment below code in case of api*************** ///
 
   // console.log(data, 'the given data')
@@ -31,15 +29,11 @@ export const login = (data) => {
   // });
 };
 
-
-
-
 export function forgotPassword(data) {
-  return apiPost(FORGOT_PASSWORD, data)
+  return apiPost(FORGOT_PASSWORD, data);
 }
 
 export function logout() {
-  dispatch({ type: types.CLEAR_REDUX_STATE });
+  dispatch({type: types.CLEAR_REDUX_STATE});
   clearUserData();
 }
-

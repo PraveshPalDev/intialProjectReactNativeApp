@@ -8,10 +8,8 @@ export default function (Stack) {
       <Stack.Screen
         name={navigationStrings.TAB_ROUTES}
         component={TabRoutes}
-        options={{ headerShown: false }}
-      
+        options={{headerShown: false}}
       />
     </>
   );
 }
-

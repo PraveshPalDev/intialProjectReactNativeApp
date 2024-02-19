@@ -1,9 +1,5 @@
-
 export default {
-    regular: "Lato-Regular",
-    bold: "Lato-Bold",
-    medium: "Lato-Medium",
-}
-
-
-
+  regular: 'Lato-Regular',
+  bold: 'Lato-Bold',
+  medium: 'Lato-Medium',
+};
